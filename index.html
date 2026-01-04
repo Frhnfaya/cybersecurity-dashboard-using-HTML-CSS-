@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>InSpectra 5 Admin Console</title>
+  <link rel="stylesheet" href="admin.css" />
+</head>
+<body>
+  <div class="dashboard-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo-space">
+        <div class="logo-placeholder"> <img src="" alt=""></div>
+        <h2><B>INSPECTRA </B><h1>5</h1></h2>
+        <p>Cybersecurity Console</p>
+      </div>
+
+      <nav class="nav-menu">
+        <a href="#" class="active">Overview</a>
+        <a href="#">Traffic Logs</a>
+        <a href="#">Blocked Threats</a>
+        <a href="#">Policy Manager</a>
+        <hr />
+        <a href="#">Live Statistics</a>
+        <a href="#">Threat Timeline</a>
+        <a href="#">Gate Status View</a>
+        <a href="#">Compliance Report</a>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <header class="header-bar">
+        <h1>Real-Time Threat Intelligence Overview</h1>
+        <button class="refresh-btn">⟳ Refresh</button>
+      </header>
+
+      <section class="cards">
+        <div class="card critical">
+          <h3>Critical Threats</h3>
+          <p class="value">5 – 10</p>
+          <span>Active Critical Severity Threats ↑ 12%</span>
+        </div>
+        <div class="card iocs">
+          <h3>New IOCs</h3>
+          <p class="value">10 – 15</p>
+          <span>Indicators in Last 24 h ↑ 5%</span>
+        </div>
+        <div class="card campaigns">
+          <h3>Active Campaigns</h3>
+          <p class="value">6 – 10</p>
+          <span>Ongoing campaigns ↓ 3%</span>
+        </div>
+        <div class="card defenses">
+          <h3>Gate Status</h3>
+          <p class="value">Stable</p>
+          <span>All firewalls operational</span>
+        </div>
+      </section>
+
+      <section class="tables">
+        <div class="table-section">
+          <h2>Threat Timeline</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Severity</th><th>Title</th><th>Type</th><th>Date</th><th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="critical">Critical</td><td>Ransomware Attack</td><td>Malware</td><td>29 Oct 2026</td><td>Real-Time</td>
+              </tr>
+              <tr>
+                <td class="high">High</td><td>Phishing Attempt</td><td>Email Threat</td><td>31 Oct 2026</td><td>2 h ago</td>
+              </tr>
+              <tr>
+                <td class="medium">Medium</td><td>Unauthorized Login</td><td>Access Breach</td><td>1 Nov 2026</td><td>4 h ago</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="table-section">
+          <h2>Compliance Report</h2>
+          <ul class="report-list">
+            <li><span>Firewall Rules</span><span class="pass">Pass</span></li>
+            <li><span>Encryption Protocols</span><span class="pass">Pass</span></li>
+            <li><span>Patch Updates</span><span class="fail">Pending</span></li>
+            <li><span>Access Policies</span><span class="pass">Pass</span></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
